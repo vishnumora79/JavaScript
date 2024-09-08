@@ -120,21 +120,21 @@
 //     }
 // }
 
-// The above code can be rewritten as :
-var getUserRole = function (name, role)  {
-    switch (role) {
-        case "admin":
-            return `${name} is an admin who had all accesses`;
-        case "subadmin":
-            return `${name} is a subadmin who can create/delete courses`;
-        case "testprep":
-            return `${name} is a test prep who can create/delete tests`;   
-        case "user":
-            return `${name} is a user who can consume content`;     
-        default:
-            return `${name} is just a normal user with no privialiages`;
-    }
-}
+// // The above code can be rewritten as :
+// var getUserRole = function (name, role)  {
+//     switch (role) {
+//         case "admin":
+//             return `${name} is an admin who had all accesses`;
+//         case "subadmin":
+//             return `${name} is a subadmin who can create/delete courses`;
+//         case "testprep":
+//             return `${name} is a test prep who can create/delete tests`;   
+//         case "user":
+//             return `${name} is a user who can consume content`;     
+//         default:
+//             return `${name} is just a normal user with no privialiages`;
+//     }
+// }
 
 
 // console.log(getUserRole("Vishnu", "admin"));
