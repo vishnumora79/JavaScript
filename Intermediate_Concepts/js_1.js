@@ -91,20 +91,27 @@
 // In depth about this keyword
 
 
-// 1.For all regular function calls, this points to global object / window object / empty  object.
+// // 1.For all regular function calls, this points to global object / window object / empty  object.
 
-console.log(this);  // this represents empty object
+// console.log(this);  // this represents empty object
 
-var user = {
-    first_name : "Vishnu",
-    last_name : "Vardhan",
-    obj_fun : function () {
-       console.log("Line 102", this);  // this represents object user.
-       function regular_fun () {
-        console.log("Line 105", this);  // this represents global object since it is a regular function
-     }
-     regular_fun();
-    },
-};
+// var user = {
+//     first_name : "Vishnu",
+//     last_name : "Vardhan",
+//     obj_fun : function () {
+//        console.log("Line 102", this);  // this represents object user.
+//        function regular_fun () {
+//         console.log("Line 105", this);  // this represents global object since it is a regular function
+//      }
+//      regular_fun();
+//     },
+// };
 
-user.obj_fun();
+// user.obj_fun();
+
+
+
+// Accesing the web elements - using  querySelector, getElementBy
+
+var h1_tag = document.getElementsByName("h1");
+console.log(h1_tag.innerHTML);
